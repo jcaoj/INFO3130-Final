@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.5/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../dist/output.css">
-    <link rel="stylesheet" href="input.css">
-    <link rel="stylesheet" href="../../node_modules/daisyui/dist/full.css">
     
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -75,91 +75,104 @@
       </div>
     </div>
 <!--All site code should go below this-->
-<div class="flex flex-col items-center justify-center w-screen bg-gray-100 text-gray-800 p-10">
- <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-  <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-    <div class="overflow-hidden">
-      <table class="min-w-full text-left text-sm font-light">
-        <thead class="border-b bg-neutral-50 font-medium dark:border-neutral-500">
+<div class="container my-24 mx-auto md:px-6">
+  <section class="mb-8 text-center">
+    <details class="dropdown">
+      <summary class="m-1 btn">Last 4 Months</summary>
+      <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+        <li><a>Last 4 Months</a></li>
+        <li><a>Last 6 Months</a></li>
+        <li><a>Last Year</a></li>
+        <li><a>Last 2 Years</a></li>
+        <li><a>Custom Range</a></li>
+      </ul>
+    </details>
+  </section>
+  <section class="mb-32 text-center">
+    <div class="stats shadow">
+  <div class="stat">
+    <div class="overflow-x-auto">
+      <table class="table">
+        <thead>
           <tr>
-            <th scope="col" class="px-6 py-4">Date</th>
-            <th scope="col" class="px-6 py-4">Info</th>
-            <th scope="col" class="px-6 py-4">Amount</th>
-            <th scope="col" class="px-6 py-4">Status</th>
+            <th>Date</th>
+            <th>Info</th>
+            <th>Amount</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 30, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">Google Play</td>
-            <td class="whitespace-nowrap px-6 py-4">$120.99</td>
-            <td class="whitespace-nowrap px-6 py-4">Pending</td>
+          <tr>
+            <td>Nov 30, 2023</td>
+            <td>Google Play</td>
+            <td>$120.99</td>
+            <td>Pending</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 29, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">Walmart Waterloo</td>
-            <td class="whitespace-nowrap px-6 py-4">$56.78</td>
-            <td class="whitespace-nowrap px-6 py-4">Pending</td>
+          <tr>
+            <td>Nov 29, 2023</td>
+            <td>Walmart Waterloo</td>
+            <td>$56.78</td>
+            <td>Pending</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 25, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">ATM Withdrawal</td>
-            <td class="whitespace-nowrap px-6 py-4">$150</td>
-            <td class="whitespace-nowrap px-6 py-4">Complete</td>
+          <tr>
+            <td>Nov 25, 2023</td>
+            <td>ATM Withdrawal</td>
+            <td>$150</td>
+            <td>Complete</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 25, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">711 Purchase</td>
-            <td class="whitespace-nowrap px-6 py-4">$23.10</td>
-            <td class="whitespace-nowrap px-6 py-4">Pending</td>
+          <tr  >
+            <td  >Nov 25, 2023</td>
+            <td  >711 Purchase</td>
+            <td  >$23.10</td>
+            <td  >Pending</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 24, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">Google Play</td>
-            <td class="whitespace-nowrap px-6 py-4">$15.99</td>
-            <td class="whitespace-nowrap px-6 py-4">Complete</td>
+          <tr  >
+            <td  >Nov 24, 2023</td>
+            <td  >Google Play</td>
+            <td  >$15.99</td>
+            <td  >Complete</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 24, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">Youtube Premium</td>
-            <td class="whitespace-nowrap px-6 py-4">$19.99</td>
-            <td class="whitespace-nowrap px-6 py-4">Complete</td>
+          <tr  >
+            <td  >Nov 24, 2023</td>
+            <td  >Youtube Premium</td>
+            <td  >$19.99</td>
+            <td  >Complete</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 24, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">Coco Bubble Tea</td>
-            <td class="whitespace-nowrap px-6 py-4">$5.99</td>
-            <td class="whitespace-nowrap px-6 py-4">Complete</td>
+          <tr  >
+            <td  >Nov 24, 2023</td>
+            <td  >Coco Bubble Tea</td>
+            <td  >$5.99</td>
+            <td  >Complete</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 22, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">Zehrs Groceries</td>
-            <td class="whitespace-nowrap px-6 py-4">$89.34</td>
-            <td class="whitespace-nowrap px-6 py-4">Complete</td>
+          <tr  >
+            <td  >Nov 22, 2023</td>
+            <td  >Zehrs Groceries</td>
+            <td  >$89.34</td>
+            <td  >Complete</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 20, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">Coco Bubble Tea</td>
-            <td class="whitespace-nowrap px-6 py-4">$12.98</td>
-            <td class="whitespace-nowrap px-6 py-4">Complete</td>
+          <tr  >
+            <td  >Nov 20, 2023</td>
+            <td  >Coco Bubble Tea</td>
+            <td  >$12.98</td>
+            <td  >Complete</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 16, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">Amazon Canada</td>
-            <td class="whitespace-nowrap px-6 py-4">$56.78</td>
-            <td class="whitespace-nowrap px-6 py-4">Complete</td>
+          <tr  >
+            <td  >Nov 16, 2023</td>
+            <td  >Amazon Canada</td>
+            <td  >$56.78</td>
+            <td  >Complete</td>
           </tr>
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 15, 2023</td>
-            <td class="whitespace-nowrap px-6 py-4">Walmart Waterloo</td>
-            <td class="whitespace-nowrap px-6 py-4">$34.23</td>
-            <td class="whitespace-nowrap px-6 py-4">Complete</td>
-          </tr>
+          <tr  >
+            <td  >Nov 15, 2023</td>
+            <td  >Walmart Waterloo</td>
+            <td  >$34.23</td>
+            <td  >Complete</td>
         </tbody>
       </table>
     </div>
   </div>
-</div>
+    </div>
+  </section>
 </div>
   </body>
 

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.5/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../dist/output.css">
-    <link rel="stylesheet" href="input.css">
-    <link rel="stylesheet" href="../../node_modules/daisyui/dist/full.css">
     
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -87,130 +87,59 @@
         </h2>
       </div>
     </div>
+    <br>
+    <div class="stats shadow">
+      <div class="stat">
+        <div class="stat-title">Recent Transactions</div>
+        <div class="overflow-x-auto">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Info</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nov 30, 2023</td>
+                <td>Google Play</td>
+                <td>$120.99</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>Nov 29, 2023</td>
+                <td>Walmart Waterloo</td>
+                <td>$56.78</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>Nov 25, 2023</td>
+                <td>ATM Withdrawal</td>
+                <td>$150</td>
+                <td>Complete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="transactions.html"><button class="btn btn-primary">See All Transactions</button></a> 
+      </div>
+      
+      <div class="stat">
+        <div class="stat-title">Credit Score</div>
+        <div class="justify-center"><div class="radial-progress" style="--value:88; color: green" role="progressbar">800</div></div> 
+        <div class="stat-desc">↗︎ 5 (Since Oct 2023)</div>
+      </div>
+      
+      <div class="stat">
+        <div class="stat-title">Stocks</div>
+        <div class="stat-value" style="color: green;">+1.2%</div>
+        <a href="transactions.html"><button class="btn btn-primary">See All Stocks</button></a> 
+      </div>
+      
+    </div>
   </section>
-</div>
-
-<div class="flex flex-col items-center justify-center w-screen h-auto text-gray-800 p-10">
-<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
-  <div class="-m-1 flex flex-wrap md:-m-2">
-    <div class="flex w-full flex-wrap">
-      <div class="w-full p-1 md:p-2 block rounded-lg bg-gray-100 p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-          <h5
-          class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          Recent Transactions
-        </h5>
-          <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div class="overflow-hidden">
-                <table class="min-w-full text-left text-sm font-light">
-                  <thead class="border-b bg-neutral-50 font-medium dark:border-neutral-500">
-                    <tr>
-                      <th scope="col" class="px-6 py-4">Date</th>
-                      <th scope="col" class="px-6 py-4">Info</th>
-                      <th scope="col" class="px-6 py-4">Amount</th>
-                      <th scope="col" class="px-6 py-4">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 30, 2023</td>
-                      <td class="whitespace-nowrap px-6 py-4">Google Play</td>
-                      <td class="whitespace-nowrap px-6 py-4">$120.99</td>
-                      <td class="whitespace-nowrap px-6 py-4">Pending</td>
-                    </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 29, 2023</td>
-                      <td class="whitespace-nowrap px-6 py-4">Walmart Waterloo</td>
-                      <td class="whitespace-nowrap px-6 py-4">$56.78</td>
-                      <td class="whitespace-nowrap px-6 py-4">Pending</td>
-                    </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 25, 2023</td>
-                      <td class="whitespace-nowrap px-6 py-4">ATM Withdrawal</td>
-                      <td class="whitespace-nowrap px-6 py-4">$150</td>
-                      <td class="whitespace-nowrap px-6 py-4">Complete</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <a href="transactions.html"><button
-            type="button"
-            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-            style="height: 50px"
-            data-te-ripple-init
-            data-te-ripple-color="light">
-            All Transactions
-          </button></a> 
-      </div>
-    </div>
-    <div class="flex w-1/2 flex-wrap">
-      <div class="w-full p-1 md:p-2 block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-        <h5
-          class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          Credit
-        </h5>
-        <h1 class="mb-2 text-5xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50" style="color: green;">
-          801
-          </h1>
-      </div>
-    </div>
-    <div class="flex w-full flex-wrap">
-      <div class="w-full p-1 md:p-2 block rounded-lg bg-gray-100 p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-          <h5
-          class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          Stocks
-        </h5>
-          <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div class="overflow-hidden">
-                <table class="min-w-full text-left text-sm font-light">
-                  <thead class="border-b bg-neutral-50 font-medium dark:border-neutral-500">
-                    <tr>
-                      <th scope="col" class="px-6 py-4">Date</th>
-                      <th scope="col" class="px-6 py-4">Info</th>
-                      <th scope="col" class="px-6 py-4">Amount</th>
-                      <th scope="col" class="px-6 py-4">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 30, 2023</td>
-                      <td class="whitespace-nowrap px-6 py-4">Google Play</td>
-                      <td class="whitespace-nowrap px-6 py-4">$120.99</td>
-                      <td class="whitespace-nowrap px-6 py-4">Pending</td>
-                    </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 29, 2023</td>
-                      <td class="whitespace-nowrap px-6 py-4">Walmart Waterloo</td>
-                      <td class="whitespace-nowrap px-6 py-4">$56.78</td>
-                      <td class="whitespace-nowrap px-6 py-4">Pending</td>
-                    </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap px-6 py-4 font-medium">Nov 25, 2023</td>
-                      <td class="whitespace-nowrap px-6 py-4">ATM Withdrawal</td>
-                      <td class="whitespace-nowrap px-6 py-4">$150</td>
-                      <td class="whitespace-nowrap px-6 py-4">Complete</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <a href="transactions.html"><button
-            type="button"
-            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-            style="height: 50px"
-            data-te-ripple-init
-            data-te-ripple-color="light">
-            All Stocks
-          </button></a> 
-      </div>
-    </div>
-   
-  </div>
-</div>
 </div>
   </body>
   <footer

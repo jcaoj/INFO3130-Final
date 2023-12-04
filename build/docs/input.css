@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.statsHorizontal {
+    display: flex;
+}
+
+.statsVertical {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .statsVertical{
+       display: flex;
+    }
+
+    .statsHorizontal {
+        display: none;
+    }
+}

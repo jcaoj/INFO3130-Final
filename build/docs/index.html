@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.5/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="input.css">
     
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -16,7 +17,7 @@
     <div class="hero" style="background-image: url(../Images/painting-mountain-lake-with-mountain-background.jpg);" >
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content flex-col sm:flex-row">
-        <img src="../Images/BOC.png" class="float-left rounded-lg shadow-2xl w-24 flex justify-start" />
+        <img src="../Images/BOC.png" class="float-left rounded-lg shadow-2xl w-24 flex justify-start" alt="Bank Of Canada Logo" />
         
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md">
@@ -29,7 +30,7 @@
     <div class="navbar bg-base-100">
       <div class="navbar-start">
         <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden"  aria-label="Menu Dropdown">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </div>
         <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -88,17 +89,17 @@
       </div>
     </div>
     <br>
-    <div class="stats shadow">
+    <div class="stats shadow statsHorizontal">
       <div class="stat">
-        <div class="stat-title">Recent Transactions</div>
+        <div class="stat-title" style="color: black;">Recent Transactions</div>
         <div class="overflow-x-auto">
           <table class="table">
             <thead>
               <tr>
-                <th>Date</th>
-                <th>Info</th>
-                <th>Amount</th>
-                <th>Status</th>
+                <th style="color: black;">Date</th>
+                <th style="color: black;">Info</th>
+                <th style="color: black;">Amount</th>
+                <th style="color: black;">Status</th>
               </tr>
             </thead>
             <tbody>
@@ -127,17 +128,72 @@
       </div>
       
       <div class="stat">
-        <div class="stat-title">Credit Score</div>
-        <div class="justify-center"><div class="radial-progress" style="--value:88; color: green" role="progressbar">800</div></div> 
-        <div class="stat-desc">↗︎ 5 (Since Oct 2023)</div>
+        <div class="stat-title" style="color: black;">Credit Score</div>
+        <div class="justify-center"><div class="radial-progress" style="--value:88; color: green" role="progressbar" aria-label="Credit Score">800</div></div> 
+        <div class="stat-desc" style="color: black;">↗︎ 5 (Since Oct 2023)</div>
       </div>
       
       <div class="stat">
-        <div class="stat-title">Stocks</div>
+        <div class="stat-title" style="color: black;">Stocks</div>
         <div class="stat-value" style="color: green;">+1.2%</div>
         <a href="transactions.html"><button class="btn btn-primary">See All Stocks</button></a> 
       </div>
       
+    </div>
+
+    <div class="stats shadow statsVertical">
+      <div class="stat">
+        <div class="stat-title" style="color: black;">Recent Transactions</div>
+        <div class="overflow-x-auto">
+          <table class="table">
+            <thead>
+              <tr>
+                <th style="color: black;">Date</th>
+                <th style="color: black;">Info</th>
+                <th style="color: black;">Amount</th>
+                <th style="color: black;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nov 30, 2023</td>
+                <td>Google Play</td>
+                <td>$120.99</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>Nov 29, 2023</td>
+                <td>Walmart Waterloo</td>
+                <td>$56.78</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>Nov 25, 2023</td>
+                <td>ATM Withdrawal</td>
+                <td>$150</td>
+                <td>Complete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="transactions.html"><button class="btn btn-primary">See All Transactions</button></a> 
+      </div>
+    </div>
+
+    <div class="stats shadow statsVertical">
+      <div class="stat">
+        <div class="stat-title" style="color: black;">Credit Score</div>
+        <div class="justify-center"><div class="radial-progress" style="--value:88; color: green" role="progressbar" aria-label="Credit Score">800</div></div> 
+        <div class="stat-desc" style="color: black;">↗︎ 5 (Since Oct 2023)</div>
+      </div>
+    </div>
+      
+    <div class="stats shadow statsVertical">
+      <div class="stat">
+        <div class="stat-title" style="color: black;">Stocks</div>
+        <div class="stat-value" style="color: green;">+1.2%</div>
+        <a href="transactions.html"><button class="btn btn-primary">See All Stocks</button></a> 
+      </div>
     </div>
   </section>
 </div>

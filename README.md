@@ -9,6 +9,8 @@ Deployed at https://info3130-final.onrender.com/.
 We chose the following UI libraries for their modern, sleek look and ease of use.
 - Tailwind
 - Daisy UI
+We used the following library for icons. 
+- FontAwesome
 
 ## Authors
 - Sean Brasil

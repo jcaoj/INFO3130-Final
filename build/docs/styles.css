@@ -1,0 +1,109 @@
+.accountDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 197px);
+}
+
+.accountWrapper {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e5e7eb;
+    box-shadow: 8px 8px 8px rgba(229, 231, 235, 0.8);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.balanceWrapper {
+    border-right: 1px solid #e5e7eb;
+}
+
+#account-balances,
+#transfer-options {
+    padding: 10px 20px;
+}
+
+.balanceHeading,
+.transferHeading {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 6px;
+}
+
+#account-balances>p {
+    font-size: 18px;
+    padding: 7px;
+}
+.payBtn
+{
+    margin-top: 18px;
+    background-color: #e5e7eb !important;
+}
+.bal {
+    font-weight: 600;
+}
+
+#transfer-options>form>div>label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#transfer-options>form>div {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#transfer-options>form>div>select {
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-weight: 600;
+    border: 1px solid #e5e7eb;
+}
+
+.selectAmount {
+    width: 75%;
+    border-bottom: 2px solid #e5e7eb;
+    outline: none;
+    font-weight: 600;
+}
+
+.transferbtn {
+    background-color: #e5e7eb !important;
+    font-size: 16px;
+}
+
+/* responsive css starts here */
+
+@media (max-width:730px) {
+
+    .balanceHeading,
+    .transferHeading {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:630px) {
+    .accountDetails {
+
+        height: auto;
+    }
+
+    .accountWrapper {
+        flex-direction: column;
+    }
+
+    .balanceWrapper {
+        border: none;
+    }
+
+    #account-balances,
+    #transfer-options {
+        padding: 10px;
+    }
+}

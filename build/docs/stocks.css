@@ -1,0 +1,82 @@
+.stocks
+{
+    width: 100%;
+}
+.stocksWrapper
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.summarydiv
+{
+    display: flex;
+}
+.stockImage
+{
+width: 60%;
+}
+.stockImage>img{
+    width: 100%;
+}
+.stockholding
+{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.totalAmt
+{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.totalAmt>span{
+    font-weight: bolder;
+    font-size: 45px;
+}
+.holdingText
+{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.stockholding>ul>li{
+    font-size: 20px;
+}
+.detailDiv
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.stocksDetail1,.stocksDetail2{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #e5e7eb;
+}
+.stocksDetail1 form div
+{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
+}
+.stocksDetail1 form div input{
+    outline: none;
+    border-bottom: 1px solid #e5e7eb;
+
+}
+.stocksDetail3{
+    flex: 1;
+}
+
+
+.imgdiv
+{
+    width: 40%;
+}

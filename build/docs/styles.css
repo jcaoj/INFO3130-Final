@@ -38,11 +38,7 @@
     font-size: 18px;
     padding: 7px;
 }
-.payBtn
-{
-    margin-top: 18px;
-    background-color: #e5e7eb !important;
-}
+
 .bal {
     font-weight: 600;
 }
@@ -73,10 +69,6 @@
     font-weight: 600;
 }
 
-.transferbtn {
-    background-color: #e5e7eb !important;
-    font-size: 16px;
-}
 
 /* responsive css starts here */
 
